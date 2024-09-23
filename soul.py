@@ -16,11 +16,11 @@ from telebot.types import ReplyKeyboardMarkup, KeyboardButton
 
 loop = asyncio.get_event_loop()
 
-TOKEN = '753296718377ASkXUUJfVbX3_IVHMV_PcEVaLo'
+TOKEN = '7951161364:AAFJAEhSF5J7gE7JrHyJIymb4hWQDlbj1o0'
 MONGO_URI = 'mongodb+srv://Soul:JYAuvlizhw7wqLOb@soul.tsga4.mongodb.net'
-FORWARD_CHANNEL_ID = -100
-CHANNEL_ID = -100
-error_channel_id = -100
+FORWARD_CHANNEL_ID = -1002431515902
+CHANNEL_ID = -1002431515902
+error_channel_id = -1002431515902
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
@@ -29,7 +29,7 @@ db = client['soul']
 users_collection = db.users
 
 bot = telebot.TeleBot(TOKEN)
-REQUEST_INTERVAL = 1
+REQUEST_INTERVAL = 2
 
 blocked_ports = [8700, 20000, 443, 17500, 9031, 20002, 20001]  # Blocked ports list
 
